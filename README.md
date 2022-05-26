@@ -32,4 +32,4 @@ Necessário verificar se a SDK do android está instalada em caso de erro de SDK
    - no macOS sdk.dir = `/Users/USERNAME/Library/Android/sdk`
    - no Linux sdk.dir = `/home/USERNAME/Android/Sdk`
 
-Substitua USERNAME pelo nome de usuário do PC. Feito isso, rode o comando yarn android.
+Substitua `USERNAME` pelo nome de usuário do PC. Feito isso, rode o comando `yarn android`.
