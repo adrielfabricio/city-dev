@@ -8,6 +8,7 @@ import Cities from '../screens/Cities';
 import Places from '../screens/Places';
 import CreateCity from '../screens/CreateCity';
 import CreatePlace from '../screens/CreatePlace';
+import UpdatePlace from '../screens/UpdatePlace';
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,11 @@ const Routes: React.FC = () => {
 					name="CreatePlace"
 					component={CreatePlace}
 					options={{ headerTitle: 'Criar Local' }}
+				/>
+				<Stack.Screen
+					name="UpdatePlace"
+					component={UpdatePlace}
+					options={{ headerTitle: 'Atualizar Local' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

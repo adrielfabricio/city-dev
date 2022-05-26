@@ -32,7 +32,7 @@ interface SetPlaceAction {
 
 interface DeletePlaceAction {
 	type: typeof Types.DELETE_PLACE;
-	payload: PlaceState;
+	payload: number | string;
 }
 
 interface UpdatePlaceAction {

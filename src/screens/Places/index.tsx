@@ -48,8 +48,8 @@ const Places: React.FC<Props> = ({ route, navigation }) => {
 				key={item.name}
 				item={item}
 				handlePress={() =>
-					navigation.navigate('Places', {
-						_id: item._id,
+					navigation.navigate('UpdatePlace', {
+						place_id: item._id,
 					})
 				}
 			/>

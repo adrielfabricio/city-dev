@@ -10,16 +10,16 @@ export const setPlace = (
 	};
 };
 
-export const deletePlace = (city: PlaceState): PlaceActionTypes => {
+export const deletePlace = (index: string): PlaceActionTypes => {
 	return {
 		type: Types.DELETE_PLACE,
-		payload: city,
+		payload: index,
 	};
 };
 
-export const updatePlace = (city: PlaceState): PlaceActionTypes => {
+export const updatePlace = (place: PlaceState): PlaceActionTypes => {
 	return {
 		type: Types.UPDATE_PLACE,
-		payload: city,
+		payload: place,
 	};
 };
