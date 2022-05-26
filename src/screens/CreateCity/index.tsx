@@ -8,9 +8,11 @@ import { setCity } from '../../store/city/actions';
 import { RootState } from '../../store/rootReducer';
 import { ButtonContainer, Container } from './styles';
 
-interface Props {}
+interface Props {
+	navigation: any;
+}
 
-const CreateCity: React.FC<Props> = ({}) => {
+const CreateCity: React.FC<Props> = ({ navigation }) => {
 	const dispatch = useDispatch();
 	const cities = useSelector((state: RootState) =>
 		Object.values(state.city).filter(city => {
@@ -28,6 +30,7 @@ const CreateCity: React.FC<Props> = ({}) => {
 			country_name: country,
 		};
 		dispatch(setCity(cities, { ...city }));
+		navigation.goBack();
 	}
 
 	return (

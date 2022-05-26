@@ -16,8 +16,18 @@ const cities: Array<City> = [
 const places: Array<Place> = [
 	{
 		_id: '1',
+		name: 'Restaurante Grill a Kilo',
 		type: 'restaurant',
-		notes: 'Restaurante Grill a Kilo',
+		address: 'Endereço 001',
+		notes: 'O melhor da cidade',
+		city_id: '1',
+	},
+	{
+		_id: '2',
+		name: 'Restaurante Grill a Kilo',
+		type: 'restaurant',
+		address: 'Endereço 002',
+		notes: 'O melhor da cidade 2',
 		city_id: '1',
 	},
 ];

@@ -3,9 +3,11 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Cities from '../screens/Cities';
-import CreateCity from '../screens/CreateCity';
 import Header from '../components/Header';
+import Cities from '../screens/Cities';
+import Places from '../screens/Places';
+import CreateCity from '../screens/CreateCity';
+import CreatePlace from '../screens/CreatePlace';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +27,16 @@ const Routes: React.FC = () => {
 					name="CreateCity"
 					component={CreateCity}
 					options={{ headerTitle: 'Criar Cidade' }}
+				/>
+				<Stack.Screen
+					name="Places"
+					component={Places}
+					options={{ headerTitle: 'Locais' }}
+				/>
+				<Stack.Screen
+					name="CreatePlace"
+					component={CreatePlace}
+					options={{ headerTitle: 'Criar Local' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

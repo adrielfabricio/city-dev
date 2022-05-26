@@ -8,7 +8,7 @@ export const Container = styled.Pressable({
 	paddingVertical: 15,
 });
 
-export const Name = styled.Text({
+export const AddressName = styled.Text({
 	color: colors.listText,
 	fontSize: 16,
 	fontWeight: 'bold',

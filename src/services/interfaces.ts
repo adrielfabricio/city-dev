@@ -6,7 +6,9 @@ export interface City {
 
 export interface Place {
 	_id: string;
+	name: string;
 	type: 'restaurant' | 'residencial' | 'other';
+	address: string;
 	notes: string;
 	city_id: string;
 }
